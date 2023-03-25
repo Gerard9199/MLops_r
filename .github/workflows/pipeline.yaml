@@ -36,7 +36,7 @@ jobs:
     - name: Ingestar Datos
       run: |
          python 02_ingestar.py
-         ls -l train.csv test.csv train_01.csv train_02.csv
+         ls -l test.csv validate.csv train.csv
     - name: Entrenar 
       run: |
          python 03_entrenar.py
