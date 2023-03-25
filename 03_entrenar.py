@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from scipy.stats import f
+import pickle
 
 def function_testing(train, test, alpha, w, iteraciones=10):
     from math import isclose
@@ -61,3 +62,5 @@ F = (r2 / k) / ((1-r2)/v2)
 
 if F>F_a == True: print('En zona de rechazo') 
 else: print('No se rechaza')
+
+pickle.dump(reg_validate,open("mlparams", 'wb') )
