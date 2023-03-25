@@ -20,8 +20,8 @@ def infer():
 
     reqX_1 = request.args.get('x_1')
     reqX_2 = request.args.get('x_2')
-    reqX_3 = request.args.get('x_1')
-    reqX_4 = request.args.get('x_2')
+    reqX_3 = request.args.get('x_3')
+    reqX_4 = request.args.get('x_4')
     x_1 = float(reqX_1)
     x_2 = float(reqX_2)
     x_3 = float(reqX_3)
